@@ -1,0 +1,94 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto&display=swap');
+
+body{
+    margin: 0;
+    padding: 0;
+    font-family: 'Roboto', sans-serif;
+    letter-spacing: 1px;
+    background-image: url('../img/fondo.jpg');
+    background-size: cover;
+}
+.login{
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    width: 340px;
+    height: 400px;
+    padding: 80px 40px;
+    box-sizing: border-box;
+    background: rgba(0, 0, 0, .8);
+}
+.login::before{
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 50%;
+    height: 100%;
+    background: rgba(255, 255, 255, .1);
+    pointer-events: none;
+}
+.avatar{
+    width: 100px;
+    height: 100px;
+    border-radius: 50%;
+    position: absolute;
+    top: calc(-100px/2);
+    left: calc(50% - 50px);
+}
+.login h2{
+    margin: 0;
+    padding: 0;
+    margin-bottom: 20px;
+    color: #efed40;
+    text-align: center;
+}
+.login p{
+    margin: 0;
+    padding: 0;
+    font-weight: 400;
+    color: #fff;
+}
+.login input{
+    width: 100%;
+    margin-bottom: 20px;
+}
+.login input[type="email"],
+.login input[type="password"]
+{
+    border:none;
+    border-bottom: 1px solid #fff;
+    background: transparent;
+    outline: none;
+    color: #fff;
+    font-size: 16px;
+    height: 40px;
+}
+.login input[type="submit"]
+{
+    outline: none;
+    border: none;
+    color: #262626;
+    background-color: #efed40;
+    cursor: pointer;
+    height: 40px;
+    border-radius: 20px;
+    font-size: 16px;
+    text-transform: uppercase;
+}
+.login input[type="submit"]:hover
+{
+    background: #efed40;
+    color: #262626;
+}
+.login a{
+    color: #fff;
+    font-size: 14px;
+    font-weight: bold;
+    text-decoration: none;
+    transition: .2s
+}
+.login a:hover{
+    color: #efed40;
+}
